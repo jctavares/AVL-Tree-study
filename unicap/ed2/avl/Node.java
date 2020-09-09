@@ -18,16 +18,6 @@ public class Node {
         this.rightNode = null;
     }
     
-    public Node() {
-        this.keyValue = null;
-        this.rightHeight = 0;
-        this.leftHeight = 0;
-        this.totalHeight = 0;
-        this.totalHeight = 0;
-        this.leftNode = null;
-        this.rightNode = null;
-    }
-    
     public Integer getValue() {
         return this.keyValue;
     }
