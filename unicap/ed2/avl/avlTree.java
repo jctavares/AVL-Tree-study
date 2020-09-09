@@ -19,7 +19,7 @@ public class avlTree {
         if (root == null) {
             return root = new Node(key);
         }
-        if (key >= root.getValue()) {
+        if (key > root.getValue()) {
             root.setRight(insert(root.getRight(), key));
             root.increaseRightHeight();
         } else if (key < root.getValue()) {
