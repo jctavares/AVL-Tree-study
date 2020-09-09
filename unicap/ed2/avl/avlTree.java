@@ -20,30 +20,7 @@ public class avlTree {
         } else {
             return root;
         }
-
-        //int auxValue = root.getBalance();
-        /*if (auxValue < -1 && key > root.getValue()) {
-                System.out.println("RR ROTATION");
-                return rotateRR(root);
-            }
-
-            if (auxValue > 1 && key < root.getLeft().getValue()) {
-                System.out.println("LL ROTATION");
-                return rotateLL(root);
-            }
-
-            if (auxValue > 1 && key > root.getLeft().getValue()) {
-                System.out.println("LR ROTATION");
-                return rotateLR(root);
-            }
-
-            if (auxValue < -1 && key < root.getRight().getValue()) {
-                System.out.println("RL ROTATION");
-                return rotateRL(root);
-            }*/
         return checkBalance(root, key);
-
-        //return root;
     }
 
     public Node add(Integer key) {
