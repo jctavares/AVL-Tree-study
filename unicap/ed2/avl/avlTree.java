@@ -6,7 +6,15 @@ public class avlTree {
 
     public avlTree() {
     }
-
+    
+    /**
+     * Lógica de inserção que insere de fatos os nós
+     * na árvore
+     * @param root 
+     * @param key valor chave do nó
+     * @return retorna a subarvore devidamente balanceada
+     */
+    
     private Node insert(Node root, Integer key) {
         if (root == null) {
             return root = new Node(key);
@@ -23,6 +31,12 @@ public class avlTree {
         return checkBalance(root, key);
     }
 
+      /**
+     * Função de inserir para o usuário, necessitando somente um valor
+     * @param key valor do nó
+     * @return insere o valor na árvore utilizando a função insert()
+     */
+    
     public Node add(Integer key) {
         return this.root = insert(this.root, key);
     }
