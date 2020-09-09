@@ -83,20 +83,13 @@ public class avlTree {
 
         if (auxValue < -1 && key > root.getRight().getValue()) {
             return rotateRR(root);
-        }
-
-        if (auxValue > 1 && key < root.getLeft().getValue()) {
+        } else if (auxValue > 1 && key < root.getLeft().getValue()) {
             return rotateLL(root);
-        }
-
-        if (auxValue > 1 && key > root.getLeft().getValue()) {
+        } else if (auxValue > 1 && key > root.getLeft().getValue()) {
             return rotateLR(root);
-        }
-
-        if (auxValue < -1 && key < root.getRight().getValue()) {
+        } else if (auxValue < -1 && key < root.getRight().getValue()) {
             return rotateRL(root);
         }
-
         return balanceNode;
     }
 
